@@ -36,3 +36,8 @@ Para verificar o Go:
 
 ```bash
 go version
+
+## 📥 Instalação
+
+go get github.com/chromedp/chromedp@latest
+go get github.com/chromedp/cdproto@latest
