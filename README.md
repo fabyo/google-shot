@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"/> <img src="https://img.shields.io/badge/chromedp-20232A?style=for-the-badge&logo=google-chrome&logoColor=white" alt="chromedp"/>
 
-Pequena ferramenta em Go que acessa uma página web (`https://www.google.com.br`), captura um **screenshot** em PNG e gera um **PDF** da página utilizando o **Chrome em modo headless** via [chromedp](https://github.com/chromedp/chromedp).
+Pequena ferramenta em Go que acessa uma página web (`https://www.google.com.br`), captura um **screenshot** em **PNG** e gera um **PDF** da página utilizando o **Chrome em modo headless** via [chromedp](https://github.com/chromedp/chromedp).
 
 <img src="go-shot.jpg" alt="Golang" width="200" />
 
