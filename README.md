@@ -1,4 +1,4 @@
-# Google Shot 📸
+# Screenshots de sites 📸
 
 <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"/> <img src="https://img.shields.io/badge/chromedp-20232A?style=for-the-badge&logo=google-chrome&logoColor=white" alt="chromedp"/>
 
@@ -42,3 +42,8 @@ go version
 
 - go get github.com/chromedp/chromedp@latest
 - go get github.com/chromedp/cdproto@latest
+
+## Como rodar
+
+```bash
+go run main.go
