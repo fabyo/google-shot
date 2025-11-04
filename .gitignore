@@ -1,0 +1,14 @@
+# Binários gerados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Diretórios de build
+bin/
+build/
+dist/
+
+# Vendor (se usar)
+vendor/
