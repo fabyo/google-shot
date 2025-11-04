@@ -4,7 +4,7 @@
 
 Pequena ferramenta em Go que acessa uma página web (`https://www.google.com.br`), captura um **screenshot** em PNG e gera um **PDF** da página utilizando o **Chrome em modo headless** via [chromedp](https://github.com/chromedp/chromedp).
 
-<img src="img/sudoku-terminal.png" alt="Sudoku rodando no terminal" width="400" />
+<img src="go-shot.jpg" alt="Golang" width="400" />
 
 ---
 
