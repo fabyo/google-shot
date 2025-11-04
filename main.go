@@ -11,11 +11,11 @@ import (
 )
 
 func main() {
-	// cria o contexto principal do chromedp
+	// cria o contexto do chromedp
 	ctx, cancel := chromedp.NewContext(context.Background())
 	defer cancel()
 
-	// timeout pra não ficar preso pra sempre
+	// usando timeout pra não ficar preso
 	ctx, cancel = context.WithTimeout(ctx, 30*time.Second)
 	defer cancel()
 
@@ -27,15 +27,13 @@ func main() {
 	err := chromedp.Run(ctx,
 		chromedp.Navigate(url),
 
-		// dá um tempinho pra página carregar
 		chromedp.Sleep(3*time.Second),
 
-		// screenshot da página inteira (PNG)
+		// screenshot da página
 		chromedp.FullScreenshot(&screenshot, 90),
 
-		// gerar PDF via DevTools
+		// gera o PDF
 		chromedp.ActionFunc(func(ctx context.Context) error {
-			// repara aqui: 3 retornos
 			pdf, _, err := page.PrintToPDF().
 				WithPrintBackground(true).
 				Do(ctx)
@@ -50,12 +48,12 @@ func main() {
 		log.Fatalf("erro ao capturar página: %v", err)
 	}
 
-	// salva o PNG
+	// salva PNG
 	if err := os.WriteFile("google.png", screenshot, 0644); err != nil {
 		log.Fatalf("erro ao salvar PNG: %v", err)
 	}
 
-	// salva o PDF
+	// salva PDF
 	if err := os.WriteFile("google.pdf", pdfBytes, 0644); err != nil {
 		log.Fatalf("erro ao salvar PDF: %v", err)
 	}
