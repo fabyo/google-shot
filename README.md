@@ -40,7 +40,5 @@ go version
 
 ## 📥 Instalação
 
-<div>
 - go get github.com/chromedp/chromedp@latest
 - go get github.com/chromedp/cdproto@latest
-</div>
