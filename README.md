@@ -36,6 +36,7 @@ Para verificar o Go:
 
 ```bash
 go version
+```
 
 ## 📥 Instalação
 
